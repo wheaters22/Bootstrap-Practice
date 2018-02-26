@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <title>Test NavBar Page</title>
+</head>
+<!--
+Gaol: Trying to establish a custom nav bar using BootStrap 4 components
+
+Issue: I initially copied in the html under the heading 'navs -> pills with drop-downs' from the bootstrap 4 website (https://getbootstrap.com/docs/4.0/components/navs/), but haven't been able to display the drop-down, under my Products nav tab.
+-->
+
+<body>
+  <ul class="nav nav-pills nav-dropdown justify-content-center" data-app-modern-menu="true">
+    <li class="nav-item">
+      <a class="nav-link active" href="index.html">Home</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="./products.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
+        <a class="dropdown-item" href="#">Product 1</a>
+        <a class="dropdown-item" href="#">Product 2</a>
+        <a class="dropdown-item" href="#">Product 3</a>
+        <a class="dropdown-item" href="#">Product 4</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Order Now</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./aboutUs.html">About Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./contact.html">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Order Now</a>
+    </li>
+  </ul>
+  <h1>Home Page</h1>
+  <section class="media-content">
+    <div class="container" id="header-image">
+      <div class="row justify-content-center">
+        <div class="container" id="hero">
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
